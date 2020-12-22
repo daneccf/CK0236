@@ -1,11 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "lOQ4KsuHW8SrJ1w9oeZZHy65jd0GLamHHgI13G2FPnJx1MLlmHg8+mZwlKfmb+cHFkLQKhDtx6HXJjsQG99KnA==",
-  "success": true,
+  "dgSpecHash": "o7R0dEH+H9v040Dgya9I8e62TTGYDdJXCHGlW8oneSwnLx1B5H8UOPiNmu3C++8cQqSboCdxvax4pm3rDiiTpA==",
+  "success": false,
   "projectFilePath": "C:\\Users\\danie\\Desktop\\TDD\\DisciplinaOnline\\DisciplinaOnline.Domain\\DisciplinaOnline.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danie\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project DisciplinaOnline.Domain.Test is not compatible with netstandard2.0 (.NETStandard,Version=v2.0). Project DisciplinaOnline.Domain.Test supports: netcoreapp3.1 (.NETCoreApp,Version=v3.1)",
+      "libraryId": "DisciplinaOnline.Domain.Test",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }

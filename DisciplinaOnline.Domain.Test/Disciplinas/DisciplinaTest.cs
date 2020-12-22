@@ -14,7 +14,7 @@ namespace DisciplinaOnline.Domain.Test.Disciplinas
             var DisciplinaEsperada = new {
                 Nome = "Técnicas de Programação 2",
                 CargaHoraria = (double)64,
-                PublicoAlvo = "Alunos da UFC"
+                PublicoAlvo = PublicoAlvo.EstudanteCienciaDaComp
             };
 
             var disciplina = new Disciplina(DisciplinaEsperada.Nome,

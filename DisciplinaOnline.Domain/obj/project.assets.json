@@ -25,6 +25,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "DisciplinaOnline.Domain.Test/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/DisciplinaOnline.Domain.Test.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DisciplinaOnline.Domain.Test.dll": {}
+        }
       }
     }
   },
@@ -172,10 +182,16 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "DisciplinaOnline.Domain.Test/1.0.0": {
+      "type": "project",
+      "path": "../DisciplinaOnline.Domain.Test/DisciplinaOnline.Domain.Test.csproj",
+      "msbuildProject": "../DisciplinaOnline.Domain.Test/DisciplinaOnline.Domain.Test.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "DisciplinaOnline.Domain.Test >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -209,7 +225,11 @@
       "frameworks": {
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\danie\\Desktop\\TDD\\DisciplinaOnline\\DisciplinaOnline.Domain.Test\\DisciplinaOnline.Domain.Test.csproj": {
+              "projectPath": "C:\\Users\\danie\\Desktop\\TDD\\DisciplinaOnline\\DisciplinaOnline.Domain.Test\\DisciplinaOnline.Domain.Test.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -242,5 +262,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project DisciplinaOnline.Domain.Test is not compatible with netstandard2.0 (.NETStandard,Version=v2.0). Project DisciplinaOnline.Domain.Test supports: netcoreapp3.1 (.NETCoreApp,Version=v3.1)",
+      "libraryId": "DisciplinaOnline.Domain.Test",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }
